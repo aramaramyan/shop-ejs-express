@@ -1,0 +1,18 @@
+{
+  "name": "online_shop_ejs",
+  "version": "1.0.0",
+  "description": "Create online-shop using EJS and Express.js technologies",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "EJS",
+    "Express"
+  ],
+  "author": "Aram Aramyan <a.aramyan1997@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

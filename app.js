@@ -9,6 +9,9 @@ const rootDir = require("./helpers/path");
 
 const app = express();
 
+app.set("view engine", "ejs");
+app.set("views", "views");
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(rootDir, "public"))); // for request css files
 

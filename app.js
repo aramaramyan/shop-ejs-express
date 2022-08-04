@@ -10,6 +10,7 @@ const rootDir = require("./helpers/path");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(rootDir, "public"))); // for request css files
 
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);

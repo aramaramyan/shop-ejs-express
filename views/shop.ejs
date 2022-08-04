@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+<header class="main-header">
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item"><a href="/" class="active">Shop</a></li>
+            <li class="main-header__item"><a href="/admin/add-product">Add Product</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <% if (products.length) { %>
+    <div class="grid">
+        <% for(let product of products) {%>
+        <article class="card">
+            <header class="card__header">
+                <h1 class="product__title"><%= product.title %></h1>
+            </header>
+            <div class="card__image">
+                <img src="https://i0.wp.com/roadmap-tech.com/wp-content/uploads/woocommerce-placeholder.png?fit=1200%2C1200&ssl=1" alt="Product Image">
+            </div>
+            <div class="card__content">
+                <h2 class="product__price">$19.99</h2>
+                <p class="product__description">A very interesting product.</p>
+            </div>
+            <div class="card__actions">
+                <button class="btn">Add to Cart</button>
+            </div>
+        </article>
+        <% } %>
+    </div>
+    <% } else { %>
+        <h1>No Products Found!</h1>
+    <% } %>
+</main>
+</body>
+</html>

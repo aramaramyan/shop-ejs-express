@@ -1,0 +1,33 @@
+.product-form {
+    width: 480px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-control label,
+.form-control input {
+    display: block;
+    width: 100%;
+}
+
+.form-control label {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.form-control input {
+    padding: 2px 5px;
+    border: 1px solid var(--dark-blue);
+    font: inherit;
+    border-radius: 5px;
+    color: var(--dark-blue);
+}
